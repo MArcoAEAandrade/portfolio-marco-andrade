@@ -15,7 +15,7 @@ O portfólio funciona também como uma vitrine para recrutadores, profissionais 
 
 ## Sobre o projeto
 
-A ideia surgiu da necessidade de ter um espaço próprio para organizar aquilo que muitas vezes fica disperso entre currículo, LinkedIn, GitHub e diferentes projetos.
+A ideia surgiu da necessidade de ter um espaço próprio para organizar aquilo que muitas vezes fica disperso entre currículo, LinkedIn, Substack, GitHub e diferentes projetos.
 
 Aqui estão reunidos:
 
