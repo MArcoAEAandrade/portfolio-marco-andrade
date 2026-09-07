@@ -1,7 +1,6 @@
 # Marco Andrade — Portfólio
 ![Status](https://img.shields.io/badge/status-em%20andamento-yellow)
-![Área](https://img.shields.io/badge/área-Marketing%20Internacional-blueviolet)
-![Metodologia](https://img.shields.io/badge/metodologia-Scoring%20Matrix%20%7C%20Min--Max-blue)
+
 
 > Consumer Insights · CRM Analytics · Marketing Analytics · Inteligência de Mercado
 
