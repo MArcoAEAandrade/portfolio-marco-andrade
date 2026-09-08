@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marco Andrade — Consumer Insights · Analytics · Strategy</title>
-  <meta name="description" content="Portfolio de Marco Antonio Elias de Andrade — Consumer Insights, CRM, Marketing Analytics e Inteligência de Mercado.">
+  <meta name="description"
+    content="Portfolio de Marco Antonio Elias de Andrade — Consumer Insights, CRM, Marketing Analytics e Inteligência de Mercado.">
   <meta name="author" content="Marco Andrade">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -37,7 +40,9 @@
   <aside id="sidebar" class="sidebar" aria-label="Navegação principal">
 
     <!-- Close (mobile) -->
-    <button id="sidebar-close-btn" class="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition lg:hidden" aria-label="Fechar menu">
+    <button id="sidebar-close-btn"
+      class="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition lg:hidden"
+      aria-label="Fechar menu">
       <i data-lucide="x" class="w-5 h-5"></i>
     </button>
 
@@ -93,10 +98,14 @@
           <span class="font-semibold text-xs uppercase tracking-wider text-accent">ABERTO A OPORTUNIDADES</span>
         </div>
         <div class="flex flex-wrap gap-1.5">
-          <span class="text-xs px-2 py-0.5 rounded-md" style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Consumer Insights</span>
-          <span class="text-xs px-2 py-0.5 rounded-md" style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">CRM Analytics</span>
-          <span class="text-xs px-2 py-0.5 rounded-md" style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Marketing Analytics</span>
-          <span class="text-xs px-2 py-0.5 rounded-md" style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Inteligência de Mercado</span>
+          <span class="text-xs px-2 py-0.5 rounded-md"
+            style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Consumer Insights</span>
+          <span class="text-xs px-2 py-0.5 rounded-md"
+            style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">CRM Analytics</span>
+          <span class="text-xs px-2 py-0.5 rounded-md"
+            style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Marketing Analytics</span>
+          <span class="text-xs px-2 py-0.5 rounded-md"
+            style="color: var(--text-secondary); background: rgba(0,0,0,0.04)">Inteligência de Mercado</span>
         </div>
       </div>
     </div>
@@ -118,13 +127,16 @@
 
         <!-- Left: Mobile Menu Button -->
         <div class="flex items-center gap-3 flex-1 min-w-0">
-          <button id="mobile-menu-btn" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition lg:hidden" aria-label="Abrir menu">
+          <button id="mobile-menu-btn"
+            class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition lg:hidden"
+            aria-label="Abrir menu">
             <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
         </div>
 
         <!-- Center: Centered Navigation Links -->
-        <nav class="hidden md:flex items-center justify-center gap-1 lg:gap-3 flex-shrink-0" aria-label="Navegação rápida">
+        <nav class="hidden md:flex items-center justify-center gap-1 lg:gap-3 flex-shrink-0"
+          aria-label="Navegação rápida">
           <a href="#section-dashboard" class="topbar-nav-link" aria-label="Ir para Início">Início</a>
           <a href="#section-projects" class="topbar-nav-link" aria-label="Ir para Cases">Cases</a>
           <a href="#section-services" class="topbar-nav-link" aria-label="Ir para Serviços">Serviços</a>
@@ -136,34 +148,38 @@
 
           <!-- Search -->
           <div class="relative hidden lg:block w-40 xl:w-48">
-            <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5" style="color: var(--text-secondary)"></i>
-            <input
-              id="search-input"
-              type="text"
-              placeholder="Buscar..."
+            <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5"
+              style="color: var(--text-secondary)"></i>
+            <input id="search-input" type="text" placeholder="Buscar..."
               class="w-full pl-8 pr-3 py-1.5 rounded-xl border text-xs transition-all focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"
               style="background: var(--bg-primary); border-color: var(--border); color: var(--text-primary)"
-              aria-label="Buscar"
-            >
+              aria-label="Buscar">
             <div id="search-results" class="search-results"></div>
           </div>
 
           <!-- Theme toggle -->
-          <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Alternar tema">
+          <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            aria-label="Alternar tema">
             <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
             <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
           </button>
 
           <!-- Social Links -->
-          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition hidden xl:flex" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer"
+            class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition hidden xl:flex"
+            aria-label="LinkedIn">
             <i data-lucide="linkedin" class="w-4 h-4"></i>
           </a>
-          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition hidden xl:flex" aria-label="GitHub">
+          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer"
+            class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition hidden xl:flex"
+            aria-label="GitHub">
             <i data-lucide="github" class="w-4 h-4"></i>
           </a>
 
           <!-- Contact Button -->
-          <a href="#section-contact" class="bg-accent text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium hover:bg-accent-light transition-all inline-flex items-center gap-1.5 shadow-sm shadow-accent/20" aria-label="Ir para contato">
+          <a href="#section-contact"
+            class="bg-accent text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium hover:bg-accent-light transition-all inline-flex items-center gap-1.5 shadow-sm shadow-accent/20"
+            aria-label="Ir para contato">
             <i data-lucide="send" class="w-3.5 h-3.5"></i>
             <span>Contato</span>
           </a>
@@ -186,34 +202,42 @@
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-6">
 
           <!-- Hero Card -->
-          <div class="lg:col-span-3 bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
+          <div
+            class="lg:col-span-3 bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-accent"></span>
-              <span class="text-xs font-semibold uppercase tracking-wider text-accent">PROFISSIONAL ORIENTADO A DADOS</span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-accent">PROFISSIONAL ORIENTADO A
+                DADOS</span>
             </div>
 
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mt-4" style="color: var(--text-primary)">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mt-4"
+              style="color: var(--text-primary)">
               Transformando dados de comportamento em decisões de negócio.
             </h1>
 
             <p class="mt-4 text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary)">
-              Consumer Insights, Analytics e Inteligência de Mercado aplicados à compreensão de pessoas, mercados e oportunidades.
+              Consumer Insights, Analytics e Inteligência de Mercado aplicados à compreensão de pessoas, mercados e
+              oportunidades.
             </p>
 
             <!-- CTAs -->
             <div class="flex flex-wrap gap-3 mt-8">
-              <a href="#section-projects" class="bg-accent text-white px-6 py-3 rounded-xl font-medium hover:bg-accent-light transition-all inline-flex items-center gap-2 shadow-sm shadow-accent/20">
+              <a href="#section-projects"
+                class="bg-accent text-white px-6 py-3 rounded-xl font-medium hover:bg-accent-light transition-all inline-flex items-center gap-2 shadow-sm shadow-accent/20">
                 Ver meus cases
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
-              <a href="#section-contact" class="px-6 py-3 rounded-xl font-medium transition-all inline-flex items-center gap-2" style="background: var(--accent-bg); color: var(--text-primary)">
+              <a href="#section-contact"
+                class="px-6 py-3 rounded-xl font-medium transition-all inline-flex items-center gap-2"
+                style="background: var(--accent-bg); color: var(--text-primary)">
                 Solicitar orçamento
               </a>
             </div>
 
             <!-- Data Pipeline Visualization -->
             <div class="pipeline-container mt-10 pt-8 border-t" style="border-color: var(--border)">
-              <span class="text-sm font-medium mb-6 block" style="color: var(--text-secondary)">Pipeline de Dados para Ação</span>
+              <span class="text-sm font-medium mb-6 block" style="color: var(--text-secondary)">Pipeline de Dados para
+                Ação</span>
               <div class="flex flex-wrap items-center justify-between gap-3 sm:gap-2">
 
                 <div class="pipeline-node flex flex-col items-center text-center">
@@ -224,7 +248,8 @@
                   <span class="text-[10px] mt-0.5" style="color: var(--text-secondary)">Coleta</span>
                 </div>
 
-                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5" style="color: var(--border)"></i></div>
+                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5"
+                    style="color: var(--border)"></i></div>
 
                 <div class="pipeline-node flex flex-col items-center text-center">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-2">
@@ -234,7 +259,8 @@
                   <span class="text-[10px] mt-0.5" style="color: var(--text-secondary)">Análise</span>
                 </div>
 
-                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5" style="color: var(--border)"></i></div>
+                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5"
+                    style="color: var(--border)"></i></div>
 
                 <div class="pipeline-node flex flex-col items-center text-center">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-2">
@@ -244,7 +270,8 @@
                   <span class="text-[10px] mt-0.5" style="color: var(--text-secondary)">Descoberta</span>
                 </div>
 
-                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5" style="color: var(--border)"></i></div>
+                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5"
+                    style="color: var(--border)"></i></div>
 
                 <div class="pipeline-node flex flex-col items-center text-center">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-2">
@@ -254,7 +281,8 @@
                   <span class="text-[10px] mt-0.5" style="color: var(--text-secondary)">Planejamento</span>
                 </div>
 
-                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5" style="color: var(--border)"></i></div>
+                <div class="hidden sm:flex items-center"><i data-lucide="chevron-right" class="w-5 h-5"
+                    style="color: var(--border)"></i></div>
 
                 <div class="pipeline-node flex flex-col items-center text-center">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-2">
@@ -269,7 +297,8 @@
           </div>
 
           <!-- Journey Card -->
-          <div class="lg:col-span-2 bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
+          <div
+            class="lg:col-span-2 bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
             <h2 class="text-xl font-bold" style="color: var(--text-primary)">Jornada Profissional</h2>
 
             <div class="relative mt-8 pl-8">
@@ -279,9 +308,11 @@
               <div class="timeline-item relative mb-8">
                 <div class="timeline-dot"></div>
                 <div>
-                  <span class="text-xs font-semibold text-accent uppercase tracking-wider">Consumer Insights &amp; Analytics</span>
+                  <span class="text-xs font-semibold text-accent uppercase tracking-wider">Consumer Insights &amp;
+                    Analytics</span>
                   <h3 class="text-base font-semibold mt-1" style="color: var(--text-primary)">Banco BV</h3>
-                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa de comportamento, análise de consumidores, segmentação, CX, análise de dados e geração de insights.</p>
+                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa de
+                    comportamento, análise de consumidores, segmentação, CX, análise de dados e geração de insights.</p>
                 </div>
               </div>
 
@@ -291,7 +322,8 @@
                 <div>
                   <span class="text-xs font-semibold text-accent uppercase tracking-wider">Marketing</span>
                   <h3 class="text-base font-semibold mt-1" style="color: var(--text-primary)">FATEC Sebrae</h3>
-                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Formação acadêmica em Marketing com foco em dados, estratégia e comportamento do consumidor.</p>
+                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Formação acadêmica em
+                    Marketing com foco em dados, estratégia e comportamento do consumidor.</p>
                 </div>
               </div>
 
@@ -300,8 +332,10 @@
                 <div class="timeline-dot"></div>
                 <div>
                   <span class="text-xs font-semibold text-accent uppercase tracking-wider">Iniciação Científica</span>
-                  <h3 class="text-base font-semibold mt-1" style="color: var(--text-primary)">Inclusão Financeira de Jovens Periféricos</h3>
-                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa com métodos quantitativos e qualitativos sobre comportamento financeiro e acesso a serviços.</p>
+                  <h3 class="text-base font-semibold mt-1" style="color: var(--text-primary)">Inclusão Financeira de
+                    Jovens Periféricos</h3>
+                  <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa com métodos
+                    quantitativos e qualitativos sobre comportamento financeiro e acesso a serviços.</p>
                 </div>
               </div>
             </div>
@@ -311,7 +345,8 @@
         <!-- KPI Grid -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 
-          <div class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
+          <div
+            class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-semibold uppercase tracking-wider text-accent">DESTAQUE</span>
               <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -322,7 +357,8 @@
             <div class="text-sm mt-1" style="color: var(--text-secondary)">Programa de Aceleração BV</div>
           </div>
 
-          <div class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
+          <div
+            class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-semibold uppercase tracking-wider text-accent">EXPERTISE</span>
               <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -333,7 +369,8 @@
             <div class="text-sm mt-1" style="color: var(--text-secondary)">Experiência profissional</div>
           </div>
 
-          <div class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
+          <div
+            class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-semibold uppercase tracking-wider text-accent">STACK</span>
               <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -344,7 +381,8 @@
             <div class="text-sm mt-1" style="color: var(--text-secondary)">Analytics Stack</div>
           </div>
 
-          <div class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
+          <div
+            class="kpi-card bg-white dark:bg-surface-dark rounded-2xl p-5 sm:p-6 border border-gray-100 dark:border-gray-800 animate-on-scroll">
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-semibold uppercase tracking-wider text-accent">PESQUISA</span>
               <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -364,22 +402,32 @@
       <section id="section-projects" class="mt-12">
         <div class="animate-on-scroll">
           <h2 class="text-2xl font-bold" style="color: var(--text-primary)">Cases Selecionados</h2>
-          <p class="mt-1" style="color: var(--text-secondary)">Projetos e análises em Consumer Insights, Analytics e Marketing.</p>
+          <p class="mt-1" style="color: var(--text-secondary)">Projetos e análises em Consumer Insights, Analytics e
+            Marketing.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
 
           <!-- Case 01 -->
-          <div class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-               data-title="Diagnóstico de Churn — Consumer Insights"
-               data-tags="Consumer Insights,SQL,Python,Power BI,Customer Experience">
-            <a href="https://canva.link/y3kpek0dhhb5ixr" target="_blank" rel="noopener noreferrer" class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group" aria-label="Abrir case: Diagnóstico de Churn">
-              <img src="img/case-churn.png" alt="Diagnóstico de Churn — Consumer Insights" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo de Caso</span>
+          <div
+            class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Diagnóstico de Churn — Consumer Insights"
+            data-tags="Consumer Insights,SQL,Python,Power BI,Customer Experience">
+            <a href="https://canva.link/y3kpek0dhhb5ixr" target="_blank" rel="noopener noreferrer"
+              class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group"
+              aria-label="Abrir case: Diagnóstico de Churn">
+              <img src="img/case-churn.png" alt="Diagnóstico de Churn — Consumer Insights"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <span
+                class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo
+                de Caso</span>
             </a>
             <div class="p-6">
-              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Diagnóstico de Churn — Consumer Insights</h3>
-              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Uma análise de churn orientada à identificação de padrões de comportamento, engajamento e oportunidades de retenção.</p>
+              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Diagnóstico de Churn — Consumer
+                Insights</h3>
+              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Uma análise de churn
+                orientada à identificação de padrões de comportamento, engajamento e oportunidades de retenção.</p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Consumer Insights</span>
                 <span class="tag">SQL</span>
@@ -387,53 +435,81 @@
                 <span class="tag">Power BI</span>
                 <span class="tag">Customer Experience</span>
               </div>
-              <a href="https://canva.link/y3kpek0dhhb5ixr" target="_blank" rel="noopener noreferrer" class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1" aria-label="Ver case: Diagnóstico de Churn">
+              <a href="https://canva.link/y3kpek0dhhb5ixr" target="_blank" rel="noopener noreferrer"
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
+                aria-label="Ver case: Diagnóstico de Churn">
                 Ver case <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Case 02 -->
-          <div class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-               data-title="Nubank — Análise de Expansão Internacional"
-               data-tags="Marketing Internacional,Market Intelligence,Consumer Insights,Strategy">
-            <a href="https://www.canva.com/design/DAHTT8RlCDw/E_ZxVx3SLr2zViUhoxvGHw/view?utm_content=DAHTT8RlCDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4b79ec057" target="_blank" rel="noopener noreferrer" class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group" aria-label="Abrir case: Nubank">
-              <img src="img/case-nubank.png" alt="Nubank — Análise de Expansão Internacional" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo de Caso</span>
+          <div
+            class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Nubank — Análise de Expansão Internacional"
+            data-tags="Marketing Internacional,Market Intelligence,Consumer Insights,Strategy">
+            <a href="https://www.canva.com/design/DAHTT8RlCDw/E_ZxVx3SLr2zViUhoxvGHw/view?utm_content=DAHTT8RlCDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4b79ec057"
+              target="_blank" rel="noopener noreferrer"
+              class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group"
+              aria-label="Abrir case: Nubank">
+              <img src="img/case-nubank.png" alt="Nubank — Análise de Expansão Internacional"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <span
+                class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo
+                de Caso</span>
             </a>
             <div class="p-6">
-              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Nubank — Análise de Expansão Internacional</h3>
-              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Análise comparativa de Peru, Argentina e Chile para priorização de mercado em uma estratégia de expansão internacional.</p>
+              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Nubank — Análise de Expansão
+                Internacional</h3>
+              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Análise comparativa de Peru,
+                Argentina e Chile para priorização de mercado em uma estratégia de expansão internacional.</p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Marketing Internacional</span>
                 <span class="tag">Market Intelligence</span>
                 <span class="tag">Consumer Insights</span>
                 <span class="tag">Strategy</span>
               </div>
-              <a href="https://www.canva.com/design/DAHTT8RlCDw/E_ZxVx3SLr2zViUhoxvGHw/view?utm_content=DAHTT8RlCDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4b79ec057" target="_blank" rel="noopener noreferrer" class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1" aria-label="Ver case: Nubank">
+              <a href="https://www.canva.com/design/DAHTT8RlCDw/E_ZxVx3SLr2zViUhoxvGHw/view?utm_content=DAHTT8RlCDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4b79ec057"
+                target="_blank" rel="noopener noreferrer"
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
+                aria-label="Ver case: Nubank">
                 Ver case <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- Case 03 -->
-          <div class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-               data-title="Inclusão Financeira de Jovens Periféricos"
-               data-tags="Pesquisa,Estatística,Consumer Behavior,Financial Inclusion">
-            <a href="https://www.canva.com/design/DAHBxQ9n0uw/eSxy83wfE6jN6M7kYPgdNg/view?utm_content=DAHBxQ9n0uw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heb78ed7d22" target="_blank" rel="noopener noreferrer" class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group" aria-label="Abrir case: Inclusão Financeira">
-              <img src="img/case-iniciacao.png" alt="Inclusão Financeira de Jovens Periféricos" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo de Caso</span>
+          <div
+            class="project-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Inclusão Financeira de Jovens Periféricos"
+            data-tags="Pesquisa,Estatística,Consumer Behavior,Financial Inclusion">
+            <a href="https://www.canva.com/design/DAHBxQ9n0uw/eSxy83wfE6jN6M7kYPgdNg/view?utm_content=DAHBxQ9n0uw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heb78ed7d22"
+              target="_blank" rel="noopener noreferrer"
+              class="block h-48 sm:h-52 overflow-hidden bg-gray-100 dark:bg-gray-800 relative group"
+              aria-label="Abrir case: Inclusão Financeira">
+              <img src="img/case-iniciacao.png" alt="Inclusão Financeira de Jovens Periféricos"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <span
+                class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-1 rounded-lg border border-white/10 shadow-sm pointer-events-none">Estudo
+                de Caso</span>
             </a>
             <div class="p-6">
-              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Inclusão Financeira de Jovens Periféricos</h3>
-              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa de iniciação científica sobre comportamento financeiro, acesso e barreiras enfrentadas por jovens periféricos.</p>
+              <h3 class="text-lg font-semibold" style="color: var(--text-primary)">Inclusão Financeira de Jovens
+                Periféricos</h3>
+              <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-secondary)">Pesquisa de iniciação
+                científica sobre comportamento financeiro, acesso e barreiras enfrentadas por jovens periféricos.</p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Pesquisa</span>
                 <span class="tag">Estatística</span>
                 <span class="tag">Consumer Behavior</span>
                 <span class="tag">Financial Inclusion</span>
               </div>
-              <a href="https://www.canva.com/design/DAHBxQ9n0uw/eSxy83wfE6jN6M7kYPgdNg/view?utm_content=DAHBxQ9n0uw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heb78ed7d22" target="_blank" rel="noopener noreferrer" class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1" aria-label="Ver case: Inclusão Financeira">
+              <a href="https://www.canva.com/design/DAHBxQ9n0uw/eSxy83wfE6jN6M7kYPgdNg/view?utm_content=DAHBxQ9n0uw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heb78ed7d22"
+                target="_blank" rel="noopener noreferrer"
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
+                aria-label="Ver case: Inclusão Financeira">
                 Ver case <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
@@ -448,7 +524,8 @@
       <section id="section-services" class="mt-12">
         <!-- Header de Serviços estilo Moderno -->
         <div class="animate-on-scroll mb-10">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100 dark:border-gray-800/80">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-gray-100 dark:border-gray-800/80">
             <div class="max-w-xl">
               <span class="text-xs font-bold uppercase tracking-wider text-accent block mb-2">MEUS SERVIÇOS</span>
               <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight" style="color: var(--text-primary)">
@@ -467,19 +544,22 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <!-- 01 — Dashboard & Storytelling -->
-          <div class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
-               data-title="Dashboard & Storytelling"
-               data-tags="Power BI,Data Storytelling,Dashboards,KPIs">
+          <div
+            class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
+            data-title="Dashboard & Storytelling" data-tags="Power BI,Data Storytelling,Dashboards,KPIs">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
+              <div
+                class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
                 <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
               </div>
               <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)">Dashboard &amp; Storytelling</h3>
               <p class="text-sm leading-relaxed mb-6" style="color: var(--text-secondary)">
-                Transformação de dados dispersos em dashboards claros, visuais e dinâmicos para acompanhamento e tomada de decisão estratégica.
+                Transformação de dados dispersos em dashboards claros, visuais e dinâmicos para acompanhamento e tomada
+                de decisão estratégica.
               </p>
               <div class="mb-6">
-                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block" style="color: var(--text-primary)">Entregáveis</span>
+                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block"
+                  style="color: var(--text-primary)">Entregáveis</span>
                 <ul class="service-deliverables">
                   <li>Organização e modelagem dos dados</li>
                   <li>Definição e acompanhamento de KPIs</li>
@@ -489,26 +569,30 @@
               </div>
             </div>
             <div class="pt-5 border-t border-gray-100 dark:border-gray-800/60 mt-auto">
-              <a href="#section-contact" class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+              <a href="#section-contact"
+                class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
                 Solicitar orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- 02 — Pesquisa de Consumer Insights -->
-          <div class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
-               data-title="Pesquisa de Consumer Insights"
-               data-tags="Consumer Insights,Pesquisa,Comportamento,Segmentação">
+          <div
+            class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
+            data-title="Pesquisa de Consumer Insights" data-tags="Consumer Insights,Pesquisa,Comportamento,Segmentação">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
+              <div
+                class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
                 <i data-lucide="users" class="w-6 h-6"></i>
               </div>
               <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)">Pesquisa de Consumer Insights</h3>
               <p class="text-sm leading-relaxed mb-6" style="color: var(--text-secondary)">
-                Estruturação e análise de pesquisas quantitativas e qualitativas para compreender percepções, comportamentos e necessidades do consumidor.
+                Estruturação e análise de pesquisas quantitativas e qualitativas para compreender percepções,
+                comportamentos e necessidades do consumidor.
               </p>
               <div class="mb-6">
-                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block" style="color: var(--text-primary)">Entregáveis</span>
+                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block"
+                  style="color: var(--text-primary)">Entregáveis</span>
                 <ul class="service-deliverables">
                   <li>Estruturação de pesquisas e questionários</li>
                   <li>Análise quantitativa e qualitativa de dados</li>
@@ -518,26 +602,30 @@
               </div>
             </div>
             <div class="pt-5 border-t border-gray-100 dark:border-gray-800/60 mt-auto">
-              <a href="#section-contact" class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+              <a href="#section-contact"
+                class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
                 Solicitar orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
 
           <!-- 03 — Inteligência de Mercado -->
-          <div class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
-               data-title="Inteligência de Mercado"
-               data-tags="Market Intelligence,Benchmarking,Estratégia,Concorrência">
+          <div
+            class="service-card bg-white dark:bg-surface-dark rounded-2xl p-7 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group animate-on-scroll"
+            data-title="Inteligência de Mercado" data-tags="Market Intelligence,Benchmarking,Estratégia,Concorrência">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
+              <div
+                class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-accent group-hover:text-white text-accent transition-all duration-300">
                 <i data-lucide="trending-up" class="w-6 h-6"></i>
               </div>
               <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary)">Inteligência de Mercado</h3>
               <p class="text-sm leading-relaxed mb-6" style="color: var(--text-secondary)">
-                Análise de mercado, concorrência e tendências para apoiar decisões estratégicas, expansão e posicionamento de negócio.
+                Análise de mercado, concorrência e tendências para apoiar decisões estratégicas, expansão e
+                posicionamento de negócio.
               </p>
               <div class="mb-6">
-                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block" style="color: var(--text-primary)">Entregáveis</span>
+                <span class="text-xs font-semibold uppercase tracking-wider mb-2 block"
+                  style="color: var(--text-primary)">Entregáveis</span>
                 <ul class="service-deliverables">
                   <li>Análise de setor e macro tendências</li>
                   <li>Benchmarking competitivo</li>
@@ -547,7 +635,8 @@
               </div>
             </div>
             <div class="pt-5 border-t border-gray-100 dark:border-gray-800/60 mt-auto">
-              <a href="#section-contact" class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+              <a href="#section-contact"
+                class="service-cta-link text-accent font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
                 Solicitar orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
             </div>
@@ -563,178 +652,233 @@
       <section id="section-insights" class="mt-12">
         <div class="animate-on-scroll">
           <h2 class="text-2xl font-bold" style="color: var(--text-primary)">Últimos Insights</h2>
-          <p class="mt-1" style="color: var(--text-secondary)">Reflexões sobre dados, comportamento do consumidor e marketing analytics.</p>
+          <p class="mt-1" style="color: var(--text-secondary)">Reflexões sobre dados, comportamento do consumidor e
+            marketing analytics.</p>
         </div>
 
         <!-- Category Filters -->
         <div class="flex flex-wrap gap-2 mt-6 mb-8">
-          <button class="insight-filter bg-accent text-white px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="all">Todos</button>
-          <button class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="Consumer Insights">Consumer Insights</button>
-          <button class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="Analytics">Analytics</button>
-          <button class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="CRM">CRM</button>
-          <button class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="Marketing">Marketing</button>
-          <button class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition" data-category="Data">Dados</button>
+          <button class="insight-filter bg-accent text-white px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="all">Todos</button>
+          <button
+            class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="Consumer Insights">Consumer Insights</button>
+          <button
+            class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="Analytics">Analytics</button>
+          <button
+            class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="CRM">CRM</button>
+          <button
+            class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="Marketing">Marketing</button>
+          <button
+            class="insight-filter bg-gray-100 dark:bg-gray-800 text-gray-500 px-4 py-1.5 rounded-full text-sm font-medium transition"
+            data-category="Data">Dados</button>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- Insight 01 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="Por que Consumer Insights é mais do que pesquisa de mercado"
-                   data-tags="Consumer Insights,Behavior,Strategy"
-                   data-category="Consumer Insights"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Consumer Insights: quando dados deixam de ser números e passam a explicar pessoas"
+            data-tags="Consumer Insights,Behavior,Strategy,Analytics" data-category="Consumer Insights"
+            style="transition: opacity 0.25s ease, transform 0.25s ease">
+
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
-                <span class="text-xs font-semibold uppercase tracking-wider text-accent">Consumer Insights</span>
-                <span class="text-xs" style="color: var(--text-secondary)">Ago 2026</span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-accent">
+                  Consumer Insights
+                </span>
+
+                <span class="text-xs" style="color: var(--text-secondary)">
+                  Set 2026
+                </span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">Por que Consumer Insights é mais do que pesquisa de mercado</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Explorar a diferença entre coletar dados e realmente compreender o comportamento do consumidor para gerar valor estratégico.</p>
+
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">
+                Consumer Insights: quando dados deixam de ser números e passam a explicar pessoas
+              </h3>
+
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">
+                Uma reflexão sobre como Analytics, comportamento e pesquisa se conectam para transformar dados em
+                compreensão e decisões melhores.
+              </p>
+
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min de leitura</span>
+                <span class="flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                  6 min de leitura
+                </span>
               </div>
+
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Consumer Insights</span>
                 <span class="tag">Behavior</span>
+                <span class="tag">Analytics</span>
                 <span class="tag">Strategy</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
-                Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </button>
+
+              <a href="https://marcolaandrade.substack.com/p/voce-tem-dados-mas-realmente-entende" target="_blank"
+                rel="noopener noreferrer"
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+                Ler artigo
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
             </div>
           </article>
 
           <!-- Insight 02 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="5 métricas de CRM que realmente importam para retenção"
-                   data-tags="CRM,Métricas,Retenção"
-                   data-category="CRM"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="5 métricas de CRM que realmente importam para retenção" data-tags="CRM,Métricas,Retenção"
+            data-category="CRM" style="transition: opacity 0.25s ease, transform 0.25s ease">
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
                 <span class="text-xs font-semibold uppercase tracking-wider text-accent">CRM</span>
                 <span class="text-xs" style="color: var(--text-secondary)">Jul 2026</span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">5 métricas de CRM que realmente importam para retenção</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Nem toda métrica de CRM gera ação. Um olhar sobre os indicadores que realmente ajudam a entender e reter clientes.</p>
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">5 métricas de CRM que
+                realmente importam para retenção</h3>
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Nem toda métrica
+                de CRM gera ação. Um olhar sobre os indicadores que realmente ajudam a entender e reter clientes.</p>
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 min de leitura</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 min de
+                  leitura</span>
               </div>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">CRM</span>
                 <span class="tag">Métricas</span>
                 <span class="tag">Retenção</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+              <button
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
                 Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
             </div>
           </article>
 
           <!-- Insight 03 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="Segmentação comportamental: além da demografia"
-                   data-tags="Segmentação,Analytics,Consumer Behavior"
-                   data-category="Analytics"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Segmentação comportamental: além da demografia"
+            data-tags="Segmentação,Analytics,Consumer Behavior" data-category="Analytics"
+            style="transition: opacity 0.25s ease, transform 0.25s ease">
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
                 <span class="text-xs font-semibold uppercase tracking-wider text-accent">Analytics</span>
                 <span class="text-xs" style="color: var(--text-secondary)">Jul 2026</span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">Segmentação comportamental: além da demografia</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Como segmentar clientes por comportamento real ao invés de apenas variáveis demográficas tradicionais.</p>
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">Segmentação
+                comportamental: além da demografia</h3>
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Como segmentar
+                clientes por comportamento real ao invés de apenas variáveis demográficas tradicionais.</p>
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 7 min de leitura</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 7 min de
+                  leitura</span>
               </div>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Segmentação</span>
                 <span class="tag">Analytics</span>
                 <span class="tag">Consumer Behavior</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+              <button
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
                 Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
             </div>
           </article>
 
           <!-- Insight 04 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="Data Storytelling: transformar números em narrativas"
-                   data-tags="Data Visualization,Storytelling,Communication"
-                   data-category="Data"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="Data Storytelling: transformar números em narrativas"
+            data-tags="Data Visualization,Storytelling,Communication" data-category="Data"
+            style="transition: opacity 0.25s ease, transform 0.25s ease">
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
                 <span class="text-xs font-semibold uppercase tracking-wider text-accent">Dados</span>
                 <span class="text-xs" style="color: var(--text-secondary)">Jun 2026</span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">Data Storytelling: transformar números em narrativas</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Dados só geram impacto quando comunicados bem. Princípios de storytelling aplicados à visualização de dados.</p>
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">Data Storytelling:
+                transformar números em narrativas</h3>
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Dados só geram
+                impacto quando comunicados bem. Princípios de storytelling aplicados à visualização de dados.</p>
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 8 min de leitura</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 8 min de
+                  leitura</span>
               </div>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Data Visualization</span>
                 <span class="tag">Storytelling</span>
                 <span class="tag">Communication</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+              <button
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
                 Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
             </div>
           </article>
 
           <!-- Insight 05 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="O papel do Marketing Analytics na retenção de clientes"
-                   data-tags="Marketing Analytics,Retenção,LTV"
-                   data-category="Marketing"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="O papel do Marketing Analytics na retenção de clientes"
+            data-tags="Marketing Analytics,Retenção,LTV" data-category="Marketing"
+            style="transition: opacity 0.25s ease, transform 0.25s ease">
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
                 <span class="text-xs font-semibold uppercase tracking-wider text-accent">Marketing</span>
                 <span class="text-xs" style="color: var(--text-secondary)">Jun 2026</span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">O papel do Marketing Analytics na retenção de clientes</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Como analytics pode transformar a forma como equipes de marketing pensam sobre retenção e lifetime value.</p>
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">O papel do Marketing
+                Analytics na retenção de clientes</h3>
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Como analytics
+                pode transformar a forma como equipes de marketing pensam sobre retenção e lifetime value.</p>
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min de leitura</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min de
+                  leitura</span>
               </div>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Marketing Analytics</span>
                 <span class="tag">Retenção</span>
                 <span class="tag">LTV</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+              <button
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
                 Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
             </div>
           </article>
 
           <!-- Insight 06 -->
-          <article class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
-                   data-title="De dados a decisões: framework para análise de consumidores"
-                   data-tags="Consumer Insights,Framework,Decision Making"
-                   data-category="Consumer Insights"
-                   style="transition: opacity 0.25s ease, transform 0.25s ease">
+          <article
+            class="insight-card bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden card-hover animate-on-scroll"
+            data-title="De dados a decisões: framework para análise de consumidores"
+            data-tags="Consumer Insights,Framework,Decision Making" data-category="Consumer Insights"
+            style="transition: opacity 0.25s ease, transform 0.25s ease">
             <div class="p-6">
               <div class="flex items-center justify-between mb-4">
                 <span class="text-xs font-semibold uppercase tracking-wider text-accent">Consumer Insights</span>
                 <span class="text-xs" style="color: var(--text-secondary)">Mai 2026</span>
               </div>
-              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">De dados a decisões: framework para análise de consumidores</h3>
-              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Um framework prático para transformar dados brutos de consumidores em insights acionáveis para equipes de negócio.</p>
+              <h3 class="text-lg font-semibold leading-snug" style="color: var(--text-primary)">De dados a decisões:
+                framework para análise de consumidores</h3>
+              <p class="text-sm mt-3 leading-relaxed line-clamp-3" style="color: var(--text-secondary)">Um framework
+                prático para transformar dados brutos de consumidores em insights acionáveis para equipes de negócio.
+              </p>
               <div class="flex items-center gap-4 mt-4 text-xs" style="color: var(--text-secondary)">
-                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 9 min de leitura</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 9 min de
+                  leitura</span>
               </div>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="tag">Consumer Insights</span>
                 <span class="tag">Framework</span>
                 <span class="tag">Decision Making</span>
               </div>
-              <button class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
+              <button
+                class="mt-5 text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1">
                 Ler artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
             </div>
@@ -752,7 +896,8 @@
           <h2 class="text-2xl font-bold" style="color: var(--text-primary)">Experiência Profissional</h2>
         </div>
 
-        <div class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 mt-8 animate-on-scroll">
+        <div
+          class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 mt-8 animate-on-scroll">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
               <i data-lucide="building-2" class="w-6 h-6 text-accent"></i>
@@ -761,8 +906,10 @@
               <h3 class="text-xl font-bold" style="color: var(--text-primary)">Banco BV</h3>
               <span class="text-sm font-semibold text-accent">Consumer Insights &amp; Analytics</span>
               <p class="text-sm mt-4 leading-relaxed" style="color: var(--text-secondary)">
-                Atuação em Inteligência de Mercado e Consumer Insights, com foco em pesquisas de comportamento do consumidor, 
-                segmentação de clientes, análise de dados e Customer Experience. Responsável por gerar insights que apoiam 
+                Atuação em Inteligência de Mercado e Consumer Insights, com foco em pesquisas de comportamento do
+                consumidor,
+                segmentação de clientes, análise de dados e Customer Experience. Responsável por gerar insights que
+                apoiam
                 decisões estratégicas de negócio a partir de dados quantitativos e qualitativos.
               </p>
 
@@ -816,7 +963,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
 
           <!-- FATEC Sebrae -->
-          <div class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
+          <div
+            class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
                 <i data-lucide="graduation-cap" class="w-6 h-6 text-accent"></i>
@@ -825,7 +973,8 @@
                 <h3 class="text-lg font-bold" style="color: var(--text-primary)">FATEC Sebrae</h3>
                 <span class="text-sm font-semibold text-accent">Marketing</span>
                 <p class="text-sm mt-3 leading-relaxed" style="color: var(--text-secondary)">
-                  Formação em Marketing com foco em estratégia, comportamento do consumidor, dados e inteligência de mercado. 
+                  Formação em Marketing com foco em estratégia, comportamento do consumidor, dados e inteligência de
+                  mercado.
                   Base sólida para atuação em analytics, pesquisa e consumer insights.
                 </p>
               </div>
@@ -833,7 +982,8 @@
           </div>
 
           <!-- Scientific Research -->
-          <div class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
+          <div
+            class="bg-white dark:bg-surface-dark rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800 card-hover animate-on-scroll">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
                 <i data-lucide="flask-conical" class="w-6 h-6 text-accent"></i>
@@ -842,8 +992,8 @@
                 <h3 class="text-lg font-bold" style="color: var(--text-primary)">Iniciação Científica</h3>
                 <span class="text-sm font-semibold text-accent">Inclusão Financeira de Jovens Periféricos</span>
                 <p class="text-sm mt-3 leading-relaxed" style="color: var(--text-secondary)">
-                  Pesquisa utilizando métodos quantitativos e qualitativos para investigar comportamento financeiro, 
-                  barreiras e acesso a serviços financeiros por jovens de comunidades periféricas. 
+                  Pesquisa utilizando métodos quantitativos e qualitativos para investigar comportamento financeiro,
+                  barreiras e acesso a serviços financeiros por jovens de comunidades periféricas.
                   Foco em estatística aplicada, análise de dados e consumer behavior.
                 </p>
                 <div class="flex flex-wrap gap-2 mt-4">
@@ -872,7 +1022,8 @@
                 Vamos conversar sobre o <span class="text-accent">seu projeto?</span>
               </h2>
               <p class="mt-4 text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary)">
-                Preencha as informações ao lado e eu prepararei uma mensagem com os detalhes do seu projeto para você enviar diretamente pelo WhatsApp.
+                Preencha as informações ao lado e eu prepararei uma mensagem com os detalhes do seu projeto para você
+                enviar diretamente pelo WhatsApp.
               </p>
             </div>
 
@@ -880,34 +1031,44 @@
             <div class="space-y-4 pt-2">
 
               <!-- Card 1: E-mail -->
-              <div class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
-                <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
+              <div
+                class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
                   <i data-lucide="mail" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <span class="text-xs font-medium block" style="color: var(--text-secondary)">E-mail</span>
-                  <a href="mailto:marco.andrade.ds@gmail.com" class="text-sm sm:text-base font-bold hover:text-accent transition-colors" style="color: var(--text-primary)">
+                  <a href="mailto:marco.andrade.ds@gmail.com"
+                    class="text-sm sm:text-base font-bold hover:text-accent transition-colors"
+                    style="color: var(--text-primary)">
                     marco.andrade.ds@gmail.com
                   </a>
                 </div>
               </div>
 
               <!-- Card 2: WhatsApp -->
-              <div class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
-                <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
+              <div
+                class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
                   <i data-lucide="message-square" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <span class="text-xs font-medium block" style="color: var(--text-secondary)">WhatsApp</span>
-                  <a href="https://wa.me/5511971238888" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold hover:text-accent transition-colors" style="color: var(--text-primary)">
+                  <a href="https://wa.me/5511971238888" target="_blank" rel="noopener noreferrer"
+                    class="text-sm sm:text-base font-bold hover:text-accent transition-colors"
+                    style="color: var(--text-primary)">
                     (11) 97123-8888
                   </a>
                 </div>
               </div>
 
               <!-- Card 3: Localização -->
-              <div class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
-                <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
+              <div
+                class="bg-white dark:bg-surface-dark rounded-2xl p-5 border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center gap-4 hover:border-accent/30 transition-all">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
                   <i data-lucide="map-pin" class="w-5 h-5"></i>
                 </div>
                 <div>
@@ -923,65 +1084,82 @@
             <!-- Social Links (LinkedIn, GitHub, Substack) -->
             <div class="flex items-center gap-3 pt-2">
               <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer"
-                 class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
-                 title="LinkedIn" aria-label="LinkedIn">
+                class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
+                title="LinkedIn" aria-label="LinkedIn">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/>
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z" />
                 </svg>
               </a>
               <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer"
-                 class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
-                 title="GitHub" aria-label="GitHub">
+                class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
+                title="GitHub" aria-label="GitHub">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
                 </svg>
               </a>
               <a href="https://substack.com/@marcolaandrade" target="_blank" rel="noopener noreferrer"
-                 class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
-                 title="Substack" aria-label="Substack">
+                class="w-12 h-12 rounded-2xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-sm flex items-center justify-center text-accent hover:bg-accent hover:text-white hover:border-accent transition-all duration-200"
+                title="Substack" aria-label="Substack">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                  <path
+                    d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
                 </svg>
               </a>
             </div>
           </div>
 
           <!-- Right Column — WhatsApp Budget Form -->
-          <div class="lg:col-span-7 animate-on-scroll bg-white dark:bg-surface-dark rounded-3xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800/80 shadow-xl relative">
+          <div
+            class="lg:col-span-7 animate-on-scroll bg-white dark:bg-surface-dark rounded-3xl p-6 sm:p-8 border border-gray-100 dark:border-gray-800/80 shadow-xl relative">
             <form id="whatsapp-contact-form" class="space-y-4">
               <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-accent block mb-1">SOLICITE UM ORÇAMENTO</span>
-                <h3 class="text-2xl font-bold tracking-tight" style="color: var(--text-primary)">Conte um pouco sobre sua ideia</h3>
-                <p class="text-xs sm:text-sm mt-1" style="color: var(--text-secondary)">Ao enviar, o WhatsApp será aberto com sua mensagem pronta.</p>
+                <span class="text-xs font-bold uppercase tracking-wider text-accent block mb-1">SOLICITE UM
+                  ORÇAMENTO</span>
+                <h3 class="text-2xl font-bold tracking-tight" style="color: var(--text-primary)">Conte um pouco sobre
+                  sua ideia</h3>
+                <p class="text-xs sm:text-sm mt-1" style="color: var(--text-secondary)">Ao enviar, o WhatsApp será
+                  aberto com sua mensagem pronta.</p>
               </div>
 
               <!-- Row 1: Name and Email -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div>
-                  <label for="contact-name" class="block text-xs font-semibold mb-1.5" style="color: var(--text-primary)">Seu nome</label>
+                  <label for="contact-name" class="block text-xs font-semibold mb-1.5"
+                    style="color: var(--text-primary)">Seu nome</label>
                   <div class="relative">
-                    <i data-lucide="user" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4" style="color: var(--text-secondary)"></i>
+                    <i data-lucide="user" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4"
+                      style="color: var(--text-secondary)"></i>
                     <input type="text" id="contact-name" required placeholder="Como posso te chamar?"
-                           class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" style="color: var(--text-primary)">
+                      class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                      style="color: var(--text-primary)">
                   </div>
                 </div>
                 <div>
-                  <label for="contact-email" class="block text-xs font-semibold mb-1.5" style="color: var(--text-primary)">Seu e-mail</label>
+                  <label for="contact-email" class="block text-xs font-semibold mb-1.5"
+                    style="color: var(--text-primary)">Seu e-mail</label>
                   <div class="relative">
-                    <i data-lucide="mail" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4" style="color: var(--text-secondary)"></i>
+                    <i data-lucide="mail" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4"
+                      style="color: var(--text-secondary)"></i>
                     <input type="email" id="contact-email" required placeholder="voce@exemplo.com"
-                           class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" style="color: var(--text-primary)">
+                      class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                      style="color: var(--text-primary)">
                   </div>
                 </div>
               </div>
 
               <!-- Row 2: Solution / Service -->
               <div>
-                <label for="contact-service" class="block text-xs font-semibold mb-1.5" style="color: var(--text-primary)">Qual solução você procura?</label>
+                <label for="contact-service" class="block text-xs font-semibold mb-1.5"
+                  style="color: var(--text-primary)">Qual solução você procura?</label>
                 <div class="relative">
-                  <i data-lucide="briefcase-business" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none" style="color: var(--text-secondary)"></i>
+                  <i data-lucide="briefcase-business"
+                    class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none"
+                    style="color: var(--text-secondary)"></i>
                   <select id="contact-service" required
-                          class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" style="color: var(--text-primary)">
+                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                    style="color: var(--text-primary)">
                     <option value="" disabled selected>Selecione uma opção</option>
                     <option value="Dashboard & Storytelling">Dashboard &amp; Storytelling</option>
                     <option value="Pesquisa de Consumer Insights">Pesquisa de Consumer Insights</option>
@@ -993,34 +1171,45 @@
 
               <!-- Row 3: Company or Project (Optional) -->
               <div>
-                <label for="contact-company" class="block text-xs font-semibold mb-1.5" style="color: var(--text-primary)">Empresa ou projeto <span class="font-normal text-xs" style="color: var(--text-secondary)">(opcional)</span></label>
+                <label for="contact-company" class="block text-xs font-semibold mb-1.5"
+                  style="color: var(--text-primary)">Empresa ou projeto <span class="font-normal text-xs"
+                    style="color: var(--text-secondary)">(opcional)</span></label>
                 <div class="relative">
-                  <i data-lucide="building-2" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4" style="color: var(--text-secondary)"></i>
+                  <i data-lucide="building-2" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4"
+                    style="color: var(--text-secondary)"></i>
                   <input type="text" id="contact-company" placeholder="Nome da empresa ou do projeto"
-                         class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" style="color: var(--text-primary)">
+                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                    style="color: var(--text-primary)">
                 </div>
               </div>
 
               <!-- Row 4: Message -->
               <div>
-                <label for="contact-message" class="block text-xs font-semibold mb-1.5" style="color: var(--text-primary)">Fale sobre sua ideia</label>
+                <label for="contact-message" class="block text-xs font-semibold mb-1.5"
+                  style="color: var(--text-primary)">Fale sobre sua ideia</label>
                 <div class="relative">
-                  <i data-lucide="message-square" class="absolute left-3.5 top-3.5 w-4 h-4" style="color: var(--text-secondary)"></i>
-                  <textarea id="contact-message" rows="4" required placeholder="Descreva o que você precisa, as principais funcionalidades e o objetivo do projeto."
-                            class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all resize-none" style="color: var(--text-primary)"></textarea>
+                  <i data-lucide="message-square" class="absolute left-3.5 top-3.5 w-4 h-4"
+                    style="color: var(--text-secondary)"></i>
+                  <textarea id="contact-message" rows="4" required
+                    placeholder="Descreva o que você precisa, as principais funcionalidades e o objetivo do projeto."
+                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all resize-none"
+                    style="color: var(--text-primary)"></textarea>
                 </div>
               </div>
 
               <!-- Consent Checkbox -->
               <div class="flex items-start gap-2.5 pt-1">
-                <input type="checkbox" id="whatsapp-consent" checked required class="mt-0.5 rounded border-gray-300 dark:border-gray-700 text-accent focus:ring-accent cursor-pointer">
-                <label for="whatsapp-consent" class="text-xs leading-snug cursor-pointer select-none" style="color: var(--text-secondary)">
+                <input type="checkbox" id="whatsapp-consent" checked required
+                  class="mt-0.5 rounded border-gray-300 dark:border-gray-700 text-accent focus:ring-accent cursor-pointer">
+                <label for="whatsapp-consent" class="text-xs leading-snug cursor-pointer select-none"
+                  style="color: var(--text-secondary)">
                   Autorizo o uso dessas informações para iniciar esta conversa pelo WhatsApp.
                 </label>
               </div>
 
               <!-- Submit Button -->
-              <button type="submit" class="w-full mt-4 bg-accent hover:bg-accent-light text-white font-semibold py-3.5 px-6 rounded-2xl transition-all duration-200 shadow-md shadow-accent/25 flex items-center justify-center gap-2 group text-sm sm:text-base">
+              <button type="submit"
+                class="w-full mt-4 bg-accent hover:bg-accent-light text-white font-semibold py-3.5 px-6 rounded-2xl transition-all duration-200 shadow-md shadow-accent/25 flex items-center justify-center gap-2 group text-sm sm:text-base">
                 <span>Enviar pelo WhatsApp</span>
                 <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
               </button>
@@ -1042,17 +1231,21 @@
         <span class="font-bold tracking-tight" style="color: var(--text-primary)">Marco Andrade</span>
         <p class="text-sm mt-1" style="color: var(--text-secondary)">Consumer Insights · Analytics · Estratégia</p>
         <div class="flex items-center justify-center gap-4 mt-4">
-          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer"
+            class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="LinkedIn">
             <i data-lucide="linkedin" class="w-4 h-4"></i>
           </a>
-          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="GitHub">
+          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer"
+            class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="GitHub">
             <i data-lucide="github" class="w-4 h-4"></i>
           </a>
-          <a href="mailto:marco.andrade.ds@gmail.com" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="E-mail">
+          <a href="mailto:marco.andrade.ds@gmail.com" class="hover:text-accent transition"
+            style="color: var(--text-secondary)" aria-label="E-mail">
             <i data-lucide="mail" class="w-4 h-4"></i>
           </a>
         </div>
-        <p class="text-xs mt-4" style="color: var(--text-secondary)">© 2026 Marco Andrade. Todos os direitos reservados.</p>
+        <p class="text-xs mt-4" style="color: var(--text-secondary)">© 2026 Marco Andrade. Todos os direitos reservados.
+        </p>
       </footer>
 
     </div><!-- /content wrapper -->
@@ -1066,22 +1259,28 @@
       <div class="p-6">
         <div class="flex items-center justify-between mb-4">
           <h4 class="text-lg font-semibold" style="color: var(--text-primary)">Vamos falar sobre dados.</h4>
-          <button id="contact-widget-close" class="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Fechar widget de contato">
+          <button id="contact-widget-close" class="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            aria-label="Fechar widget de contato">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
-        <p class="text-sm" style="color: var(--text-secondary)">Interessado em conversar sobre Consumer Insights, Analytics, CRM ou oportunidades profissionais?</p>
-        <a href="mailto:marco.andrade.ds@gmail.com" class="mt-4 w-full bg-accent text-white py-2.5 rounded-xl text-sm font-medium hover:bg-accent-light transition-all inline-flex items-center justify-center gap-2 shadow-sm shadow-accent/25">
+        <p class="text-sm" style="color: var(--text-secondary)">Interessado em conversar sobre Consumer Insights,
+          Analytics, CRM ou oportunidades profissionais?</p>
+        <a href="mailto:marco.andrade.ds@gmail.com"
+          class="mt-4 w-full bg-accent text-white py-2.5 rounded-xl text-sm font-medium hover:bg-accent-light transition-all inline-flex items-center justify-center gap-2 shadow-sm shadow-accent/25">
           <i data-lucide="send" class="w-4 h-4"></i> Enviar uma mensagem
         </a>
         <div class="flex items-center justify-center gap-4 mt-4">
-          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/marcoaeandrade" target="_blank" rel="noopener noreferrer"
+            class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="LinkedIn">
             <i data-lucide="linkedin" class="w-5 h-5"></i>
           </a>
-          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="GitHub">
+          <a href="https://github.com/MArcoAEAandrade" target="_blank" rel="noopener noreferrer"
+            class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="GitHub">
             <i data-lucide="github" class="w-5 h-5"></i>
           </a>
-          <a href="mailto:marco.andrade.ds@gmail.com" class="hover:text-accent transition" style="color: var(--text-secondary)" aria-label="E-mail">
+          <a href="mailto:marco.andrade.ds@gmail.com" class="hover:text-accent transition"
+            style="color: var(--text-secondary)" aria-label="E-mail">
             <i data-lucide="mail" class="w-5 h-5"></i>
           </a>
         </div>
@@ -1094,4 +1293,5 @@
 
   <script src="js/app.js"></script>
 </body>
+
 </html>
