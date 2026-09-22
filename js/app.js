@@ -60,10 +60,10 @@
       document.documentElement.classList.add('dark');
     }
 
-    var toggle = document.getElementById('theme-toggle');
-    if (toggle) {
+    var toggles = document.querySelectorAll('#theme-toggle, #hero-theme-toggle, [data-theme-toggle]');
+    toggles.forEach(function (toggle) {
       toggle.addEventListener('click', toggleTheme);
-    }
+    });
   }
 
   function toggleTheme() {
@@ -82,14 +82,16 @@
   // Navigation
   // =========================================================================
   function initNavigation() {
-    const navItems = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll('.nav-item, .topbar-nav-link');
 
     navItems.forEach(function (item) {
-      item.addEventListener('click', function () {
-        const sectionId = this.getAttribute('data-section');
+      item.addEventListener('click', function (e) {
+        const sectionId = this.getAttribute('data-section') || (this.getAttribute('href') ? this.getAttribute('href').replace('#', '') : null);
+        if (!sectionId) return;
         const section = document.getElementById(sectionId);
         if (!section) return;
 
+        e.preventDefault();
         // Smooth scroll
         const top = section.offsetTop - CONFIG.scrollOffset;
         window.scrollTo({ top: top, behavior: 'smooth' });
@@ -97,7 +99,7 @@
         // Update active state
         setActiveNav(sectionId);
 
-        // Close mobile sidebar
+        // Close mobile sidebar if any
         closeMobileMenu();
       });
     });
@@ -105,8 +107,8 @@
     // Scroll spy
     initScrollSpy();
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    // Smooth scroll for remaining anchor links
+    document.querySelectorAll('a[href^="#"]:not(.topbar-nav-link)').forEach(function (link) {
       link.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href').substring(1);
         const target = document.getElementById(targetId);
@@ -120,9 +122,10 @@
   }
 
   function setActiveNav(sectionId) {
-    document.querySelectorAll('.nav-item').forEach(function (item) {
+    document.querySelectorAll('.nav-item, .topbar-nav-link').forEach(function (item) {
       item.classList.remove('active');
-      if (item.getAttribute('data-section') === sectionId) {
+      const itemSection = item.getAttribute('data-section') || (item.getAttribute('href') ? item.getAttribute('href').replace('#', '') : null);
+      if (itemSection === sectionId) {
         item.classList.add('active');
       }
     });
@@ -423,6 +426,20 @@
       closeBtn.addEventListener('click', function () {
         contactWidgetOpen = false;
         panel.classList.remove('open');
+      });
+    }
+
+    var sendBtn = document.getElementById('widget-send-btn');
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function () {
+        contactWidgetOpen = false;
+        panel.classList.remove('open');
+        setTimeout(function () {
+          var nameInput = document.getElementById('contact-name');
+          if (nameInput) {
+            nameInput.focus();
+          }
+        }, 500);
       });
     }
   }
